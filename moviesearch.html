@@ -88,7 +88,11 @@
 
     var name2 = JSON.parse(window.localStorage.getItem('user'))
     var user_name = document.getElementById("user")
-    user_name.append(name2)
+    if(name2 == null){
+         user_name =""
+     }
+   else{
+       user_name.append(name2)} 
 
 
     // let movies = document.getElementById("movies")
